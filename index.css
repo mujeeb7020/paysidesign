@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+}
+
+.transparent-bg-container {
+    position: relative;
+    background-image: url('Assets/business.jpg');
+    height: 100vh; 
+    background-size: cover;
+    /* padding: 15px;  */
+    z-index: -1;
+  }
+
+  /* header css starts here */
+
+  .headerTop{
+    padding: 1rem 0;
+    background: #002563;
+
+  }
+
+  .headerTop a{
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+
+  .headerTop .top-text:nth-child(2){
+    display: inline-block;
+    margin-right:1rem;
+}
+
+.headerTop .top-text i{
+  margin-right: 0.3rem;
+}
+
+.headerTop .socialIcon{
+  display: inline-block;
+
+}
+
+.HeaderMainWrapper .headerTop .socialIcon a:not(:last-child){
+  border-right: 1px solid #fff;
+}
+
+.headerTop .socialIcon a{
+  display: inline-block;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0 0.438rem;
+}
+
+.headerTop .login{
+
+  background-color: #256be6;
+  padding: 0.313rem 1.25rem;
+    border-radius:2rem;
+    color: #fff;
+
+}
+
+.HeaderMainWrapper .headerBottomWrapper{
+  background-color: #fff;
+
+}
+
+.headerBottomWrapper a{
+  color: #000;
+  font-size: 1rem;
+  
+}
+
+
+
+.navbar-nav .nav-item .nav-link{
+   position: relative;
+   cursor: pointer;
+}
+
+.navbar-nav .nav-item .nav-link::after{
+  content: "";
+  position: absolute;
+  height: 1.7rem;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  color: red;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  background-color: #000; /* Change to your desired underline color on hover */
+}
+
+
+
+.headerBottomWrapper .nav-item:not(:last-child){ 
+  margin-right: 0.813rem;
+}
+
+
+
+  /* header css ends here */
+
+ 
+
+  .contactInfo .contactNoDiv{
+    display: flex;
+
+  }
+
+  .contactInfo .loginNdSignup{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navMainWrapper{
+    background-color: #fff;
+  }
+
+  .customNav .navbar-brand img{
+    height: 3rem;
+    width: 5rem;
+
+  }
+
+  .parallexDiv{
+    background-color: #002563; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+
+.customNav{
+    /* background-color:#ffffff; */
+    padding: 1rem 0 !important;
+}
+
+.listItemMain .listItem a{
+    color:#00308F ;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+  
+}
+
+.listItemMain .listItem a::before {
+    transition: all 0.3s ease-in-out;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color:#007FFF;
+    width: 0%;
+    bottom: 7px;
+    left: 0;
+  }
+  
+
+  
+  .listItemMain .listItem a:hover::before {
+    width: 100%;
+    
+  }
+
+  .listItemMain .nav-item .registerBtn{
+    background-color:#b29731 ;
+    outline: none;
+    border: none;
+    opacity: 1;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .listItemMain .nav-item .loginBtn{
+    background-color: #1b72ba;
+    outline: none;
+    border: none;
+    opacity: 1;
+    margin-left: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .listItemMain .nav-item .registerBtn:hover,
+  .listItemMain .nav-item .loginBtn:hover{
+    opacity: 0.7;
+  }
+
+
+  /* why choose css starts here */
+
+  .chooseUsWrapper{
+    padding: 100px 0;
+    
+  }
+
+  .chooseUsWrapper .secHeading{
+    text-align: center;
+    margin-bottom: 4.75rem;
+
+  }
+
+  .chooseUsWrapper .secHeading .SecTitle{
+    color: #2f2f35;
+    font-size: 2.25rem;
+    line-height: 3rem;
+     margin-bottom: 0;
+  }
+
+  .chooseUsWrapper .secHeading .subTitle{
+    color: #6c6c6f;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .chooseUsWrapper .iconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.225rem;
+    background-color: #fff;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0.313rem;
+    /* padding:1.875rem 1.563rem 1.375rem 7.5rem; */
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .chooseUsWrapper .iconBox img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+  }
+
+  .iconBox .iconBoxInfo h5{
+    color: #2f2f35;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  .iconBox .iconBoxInfo p{
+    color: #6c6c6f;
+    font-weight: 400;
+    font-size:1rem;
+    line-height: 1.75rem;
+  }
+
+  /* why choose css ends here */
+
+  /* main section style starts here */
+
+  .HeadingWrapper .Mainheading{
+    text-align: center;
+    color: #2f2f35;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  
+
+  .cardItem{
+    width: 100%;
+    height:100%;
+    border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+    background-color: #123d88!important;
+    border-radius: 0.9rem !important;
+    opacity:1;
+    
+  }
+
+  .cardItem:hover{
+    transform: translateY(-5px);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .rowInnerCard{
+    margin-bottom: 0.8rem;
+  }
+
+
+
+  .cardItem .cardHeading{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
+    color: rgb(45 248 197);
+  }
+
+  .cardItem .cardItemImg{
+    
+    border-radius: 1.7rem;
+    padding:0.5rem;
+    width: 14rem;
+    margin: 0.3rem auto;
+
+  }
+
+  .cardItem .cardItemText{
+  /* background-color: rgb(45 248 197); */
+  /* color: rgb(45 248 197); */
+  color: #fff;
+  font-size: 1.1rem;
+  opacity: 1;
+  line-height:1.7rem;
+  padding: 0.6rem 0.9rem;
+  margin-top:1.3rem !important;
+  }
+
+  .cardItem .cardHeadingSpan{
+    color: #fff;
+    margin-right: 0.3rem;
+
+  }
+
+  /* main section css ends here */
+
+
+  /* footer css starts here */
+
+  .footerMainWrapper{
+    background-size: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url(Assets/footer-bg.png);
+    background-color: #123d88;
+    position: relative;
+  }
+
+  .footerMainWrapper .footer-top{
+    padding: 6.25rem 0 5.625rem;
+  }
+
+  .footerMainWrapper .widget h5{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.938rem;
+    margin-bottom:1.563rem;
+  }
+
+  .footerMainWrapper .widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footerMainWrapper .widget li a,.footerMainWrapper address a{
+    color: #fff;
+    display: block;
+    font-size:0.938rem;
+    padding: 0.313rem 0;
+    /* padding-left: 0.625rem; */
+  }
+
+  .footerMainWrapper .footer-bottom{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+
+  .footerMainWrapper .footer-bottom ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-bottom .footer-navigation ul li{
+    display: inline-block;
+
+  }
+
+  .footer-bottom .footer-navigation ul li a{
+    color: #fff;
+    display: block;
+    font-size: 0.938rem;
+    padding-right: 1.25rem;
+  }
+
+  .footer-bottom .copyrightWrapper .copyRight{
+    color: #fff;
+    font-size: 0.938rem;
+  }
+
+  .footer-bottom .copyrightWrapper .copyRight a{
+    color: #fff;
+    font-weight: 500;
+
+  }
+
+
+  
+
+  /* footer css ends here */
+
+
+  /* responsive design starts here */
+
+  /* @media only screen and (max-width: 768px) {
+    .cardItem .cardItemImg{
+      width: 90%;
+      height: 10rem;
+    }
+  }
+   */
+  
+
+ 
