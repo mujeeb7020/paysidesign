@@ -9,16 +9,21 @@
 }
 
 /* comman classes starts here */
-.leftToRight {
-  background: linear-gradient(91deg, #E9EFF7 0%, rgba(240, 244, 250, 0.16) 100%);
-}
-
-.rightToLeft {
-  background: linear-gradient(91deg, rgba(240, 244, 250, 0.16) 0%, #E9EFF7 100%);
+.commanHeader{
+  font-family: 'Anek Telugu', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 0;
 }
 
 .hedingSpan {
   color: var(--span-color);
+  font-family: 'Anek Telugu', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 0;
 }
 
 .goldenSpan {
@@ -26,10 +31,11 @@
 }
 
 .paraStyle {
-  color: #6B777F;
+  /* color: #6B777F; */
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.532rem;
+  margin-bottom: 0;
 }
 
 /* comman classes ends here */
@@ -72,17 +78,6 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
-}
-
-.parallexDiv {
-  background-color: #002563;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  z-index: 99999;
 }
 
 /* header css starts here */
@@ -153,12 +148,26 @@ h6 {
 
 }
 
+.HeaderMainWrapper .socialIconWrapper .login:hover{
+  color:#fff;
+  background-color: var(--span-color);
+  transition: 0.4s all;
+}
+
 .HeaderMainWrapper .socialIconWrapper .signUp {
 
   background-color: #1b72ba;
   padding: 0.6rem 1.25rem;
   border-radius: 2rem;
   color: #fff;
+  border: 1px solid var(--span-color);
+
+
+}
+
+.HeaderMainWrapper .socialIconWrapper .signUp:hover{
+  background-color: #fff;
+  color: var(--span-color);
   transition: 0.3s all;
 
 }
@@ -270,8 +279,8 @@ h6 {
 }
 
 .weDeliverWrapper .iconBox img {
-  height: 6rem;
-  width: 6rem;
+  height: 2.5rem;
+  width:  2.5rem;
   border-radius: 0.5rem;
 }
 
@@ -330,8 +339,8 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 0.413rem;
   /* padding:1.875rem 1.563rem 1.375rem 7.5rem; */
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
+  padding: 0.7rem;
+  margin-bottom: 1.4rem;
   transition: transform 0.3s ease-in-out;
 
 }
@@ -454,29 +463,20 @@ h6 {
 }
 
 .timelineMainWrapper .floatingImg img:nth-child(7) {
-  position: absolute;
-  height: 41rem;
-  bottom: 0;
+  height: 50%;
+  width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.timelineMainWrapper .floatingImg img:nth-child(8) {
-  position: absolute;
-  top: 2px;
+.timelineMainWrapper .floatingImg img:nth-child(8) { 
+    top: 0px;
+    height: 80%;
+    width: auto;
+    position: absolute;
 }
 
-/* .svgContainer{
-    position: relative;
-  }
-
-   .svgContainer img:nth-child(1){
-    
-  }
-
- .svgContainer img:nth-child(2){
-    
-  } */
-
-.howWorksWrapper .howWorksHeading,
 .weAreSimplyWrapper .weAreSimplyHeading {
   font-family: 'Anek Telugu', sans-serif;
   font-weight: 700;
@@ -503,12 +503,14 @@ h6 {
   width: 70%;
   color: #2f2f35;
   font-size: 1.375rem;
+  margin-bottom: 0;
 }
 
 .timelineContainer .text-box h3 {
   background-color: #1b72ba;
   color: #fff;
   padding: 0.3rem;
+  margin-bottom: 0;
   border-radius: 0.9rem;
   height: 3rem;
   width: 3rem;
@@ -620,22 +622,19 @@ h6 {
 /* we are simply css starts here */
 
 .weAreSMainWrapper {
-  width: 100%;
-  max-width: 900px;
-  margin-top: 3rem;
+  background-image: url(/assets/images/send-money-online-bg.jpg);
+  
 }
 
 .weAreSimplyInnerWrapper {
   height: 19rem;
-  border: 1px solid #e1d9d9;
+  border: 1px solid #f9f9f924;
   border-radius: 1rem;
   transition: transform 0.3s ease-in-out;
 }
 
 .weAreSimplyInnerWrapper:hover {
-  transform: translateY(-5px);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
+  transform: translateY(-10px);
 }
 
 .weAreSimplyInnerWrapper .innerCardContainer .imageWrapper {
@@ -672,7 +671,7 @@ h6 {
 
 .testimonialWrapper {
   /* background: var(--backgroundGradient); */
-  background-image: url(/assets/images/Polygon\ Luminary.svg);
+  /* background-image: url(/assets/images/Polygon\ Luminary.svg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -680,17 +679,8 @@ h6 {
 
 }
 
-.testimonialWrapper .testimonialHeading {
-  font-family: 'Anek Telugu', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 3rem;
-  line-height: 3rem;
-  margin-bottom: 0;
-}
-
 .testimonialWrapper .userFedback h2 {
-  color: #e4e4e4;
+  color: #373131;
   font-size: 1.375rem;
   margin-bottom: 0;
   font-family: 'Anek Telugu', sans-serif;
@@ -741,6 +731,19 @@ h6 {
   left: -24px;
   width: 10%;
   opacity: 1;
+
+}
+
+.testimonialWrapper .carousel-control-prev-icon{
+  background-image: url(/assets/images/leftA.svg);
+}
+
+.carousel-control-next-icon{
+  background-image: url(/assets/images/right.svg);
+}
+
+.testimonialWrapper .carousel-item .card-body p{
+  color: #212529;
 
 }
 
@@ -999,9 +1002,7 @@ h6 {
     left: 66px;
   }
 
-  .timelineMainWrapper .floatingImg {
-    display: none;
-  }
+  
 
   .HeaderMainWrapper .navItemWrapper {
     margin-bottom: 1rem;
@@ -1012,22 +1013,51 @@ h6 {
 
 
   .HeaderMainWrapper .supportWrapper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     width: 50%;
+    padding: 0;
+    border: none;
   }
 
   .HeaderMainWrapper .socialIconWrapper {
     margin-bottom: 1rem;
   }
 
+  .testimonialWrapper .carousel-control-prev {
+    left: -11px;
+    width: 10%;
+    opacity: 1;
+  }
+
+.testimonialWrapper .carousel-control-next {
+    right: -10px;
+    width: 10%;
+    opacity: 1;
+}
+
+ 
+
+
+
+
+
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:767.98px) {
 
   .HeaderMainWrapper .navItemWrapper {
-    padding: 0.6rem;
+    flex-direction: row;
+    gap: 0 !important;
+    font-size: 0.6rem;
+    padding: 8px !important;
   }
+
+  .HeaderMainWrapper .supportWrapper{
+    border: none;
+    padding: 0;
+  }
+ 
 
 }
 
@@ -1049,22 +1079,33 @@ h6 {
 
 }
 
+
+
 @media only screen and (min-width:375px) and (max-width:991.98px) {
   .mobileMainWrapper {
     margin: 0;
   }
 
-
-  .HeaderMainWrapper .supportWrapper {
-    padding: 0 0.99rem;
-  }
+  
 
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
   }
 
+  .timelineMainWrapper .floatingImg {
+    display: none;
+  }
 
+
+}
+
+
+@media only screen and (min-width:576px) and (max-width:1199.98px) {
+  .weDeliverWrapper .iconBox .iconBoxInfo h5{
+    font-size: 0.9rem;
+  
+  }
 }
 
 @media only screen and (max-width:576px) {
@@ -1093,7 +1134,7 @@ h6 {
 @media only screen and (min-width:300px) {
 
   .timelineMainWrapper .svgContainer img {
-    /* display: none; */
+    display: none;
 
 
   }
