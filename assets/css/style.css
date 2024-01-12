@@ -629,6 +629,7 @@ h6 {
 .weAreSimplyInnerWrapper {
   height: 19rem;
   border: 1px solid #f9f9f924;
+  background-color: #00000078;
   border-radius: 1rem;
   transition: transform 0.3s ease-in-out;
 }
