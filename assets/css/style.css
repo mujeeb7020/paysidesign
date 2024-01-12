@@ -1081,7 +1081,7 @@ h6 {
 
 
 
-@media only screen and (min-width:375px) and (max-width:991.98px) {
+@media only screen and (min-width:300px) and (max-width:991.98px) {
   .mobileMainWrapper {
     margin: 0;
   }
