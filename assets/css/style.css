@@ -801,6 +801,8 @@ h6 {
 }
 
 
+
+
 /* android-Display section css ends here  */
 
 
@@ -1086,7 +1088,9 @@ h6 {
     margin: 0;
   }
 
-  
+  .mobileMainWrapper .storesButton{
+    display: flex;
+  }
 
   [data-aos] {
     opacity: 1 !important;
