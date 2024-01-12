@@ -843,8 +843,6 @@ h6 {
 }
 
 .footerMainWrapper .widget ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -1094,6 +1092,10 @@ h6 {
     justify-content: center;
   }
 
+  .footerMainWrapper .footer-top {
+    padding: 3.25rem 0 2.625rem;
+  }
+
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
@@ -1127,8 +1129,12 @@ h6 {
     margin-bottom: 0.23rem;
   }
 
-  .footerMainWrapper .widget ul {
-    margin-bottom: 1.745rem !important;
+  /* .footerMainWrapper .widget ul {
+    margin: 1rem 0 !important;
+  } */
+
+  .footerMainWrapper .widget h5::before{
+    width: 100%;
   }
 
   .navbar-nav .nav-item .nav-link::after {
