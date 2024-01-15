@@ -9,6 +9,10 @@
 }
 
 /* comman classes starts here */
+.fs-6{
+  font-size: 0.8125rem !important;
+}
+
 .commanHeader{
   font-family: 'Anek Telugu', sans-serif;
     font-weight: 700;
@@ -31,7 +35,7 @@
 }
 
 .paraStyle {
-  /* color: #6B777F; */
+  color: #6B777F;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.532rem;
@@ -131,7 +135,7 @@ h6 {
 
 .headerImg {
   height: auto;
-  width: 100px;
+  width: 150px;
 }
 
 .HeaderMainWrapper .headerBottomWrapper {
@@ -311,14 +315,24 @@ h6 {
 
 /* we deliver css starts here */
 
+ .mainCountryInfo .mainCountryHeading{
+  font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+
+} 
+
 .weDeliverWrapper {
-  margin-top: 5rem;
+  border-radius: 5px;
+    background-color: #fff;
 }
 
 .weDeliverWrapper .iconBox img {
-  height: auto;
-  width: 2.4rem;
-  border-radius: 0.2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
 }
 
 
@@ -333,6 +347,35 @@ h6 {
 
 .weDeliverWrapper .secHeading .SecTitle span {
   color: var(--span-color);
+}
+
+.deliverSectionWrapper{
+  background-color: #F3F6FD;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+
+
+.deliverSectionWrapper .weDeliverMainWrapper{
+  background:linear-gradient(100deg, rgb(229, 236, 250) 0%, rgb(229, 236, 251) 100%) ;
+    padding: 2rem 3rem 3rem;
+  border-radius: 7px;
+  border: 2px solid #D9E2F9;
+}
+
+.iconBox .exchangeRate p{
+  color: #41464b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.weDeliverHeading .currencyUpdates{
+  font-size: 13px;
+    color: gray;
 }
 
 /* we deliver css ends here */
@@ -371,12 +414,14 @@ h6 {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  background: linear-gradient(152deg, #EDF2F8 0%, rgba(237, 242, 248, 0.22) 100%);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* background: linear-gradient(152deg, #EDF2F8 0%, rgba(237, 242, 248, 0.22) 100%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   border-radius: 0.413rem;
   padding: 0.95rem;
   margin-bottom: 1.4rem;
   transition: transform 0.3s ease-in-out;
+  background: #f8f9fa;
+  border: 1px solid #f3f3f3;
 
 }
 /* .weDeliverWrapper .iconBox:hover {
@@ -634,6 +679,25 @@ h6 {
 }
 
 /* we are simply css ends here */
+
+/* callout css starts here */
+
+.callOutMainWrapper{
+  background-image: url(/assets/images/callOut2.svg);
+}
+
+.callOutMainWrapper .registerBtn{
+  background-color: #fff;
+  /* padding: 0.6rem 1.25rem; */
+  padding: 0.995rem 1.95rem;
+  margin-right: 0.9rem;
+  border-radius: 2rem;
+  color: #1b72ba;
+  transition: 0.3s all;
+  border: 1px solid #1b72ba;
+}
+
+/* callout css ends here */
 
 
 /* testimonial css starts here */
@@ -1010,6 +1074,11 @@ h6 {
 
 
 @media screen and (min-width:768px) and (max-width:991.98px){
+
+  .headerImg{
+    width: 100px;
+
+  }
   .HeaderMainWrapper .socialIconWrapper{
     margin-left: -35px;
     
@@ -1061,9 +1130,9 @@ h6 {
     height: 42rem;
   }
 
-  .timelineMainWrapper .floatingImg {
+  /* .timelineMainWrapper .floatingImg {
     display: none;
-  }
+  } */
 
 }
 
