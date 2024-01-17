@@ -192,11 +192,11 @@ h6 {
 
 }
 
-/* .HeaderMainWrapper .socialIconWrapper .login:hover{
+.HeaderMainWrapper .socialIconWrapper .login:hover{
   color:#fff;
   background-color: var(--span-color);
   transition: 0.4s all;
-} */
+}
 
 .HeaderMainWrapper .socialIconWrapper .signUp {
 
@@ -209,11 +209,11 @@ h6 {
 
 }
 
-/* .HeaderMainWrapper .socialIconWrapper .signUp:hover{
+.HeaderMainWrapper .socialIconWrapper .signUp:hover{
   background-color: #fff;
   color: var(--span-color);
   transition: 0.3s all;
-} */
+}
 
 .socialIconWrapper a span {
   margin-left: 0.6rem;
